@@ -1,5 +1,5 @@
 {
-  "name": "kwaadpepper/laravel-responsivefilemanager",
+  "name": "LLInH9rA/laravel-responsivefilemanager",
   "description": "Integrate Alberto Peripolli's Responsive File Manager with Laravel",
   "license": "MIT",
   "authors": [
@@ -15,8 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Kwaadpepper\\ResponsiveFileManager\\": "src/ResponsiveFileManager/",
-      "Kwaadpepper\\FtpClient\\": "src/FtpClient/"
+      "LLInH9rA\\ResponsiveFileManager\\": "src/ResponsiveFileManager/",
+      "LLInH9rA\\FtpClient\\": "src/FtpClient/"
     }
   }
 }
