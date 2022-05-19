@@ -2159,7 +2159,7 @@ class ImageLib
     {
 
         // *** Perform a check or two.
-        if (!is_resource($this->imageResized)) {
+        if (!is_resource($this->imageResized) && !($this->imageResized instanceof \GdImage)) {
             if ($this->debug) {
                 throw new _Exception('saveImage: This is not a resource.');
             } else {
@@ -2249,7 +2249,7 @@ class ImageLib
     public function displayImage($fileType = 'jpg', $imageQuality = "100")
     {
 
-        if (!is_resource($this->imageResized)) {
+        if (!is_resource($this->imageResized) && !($this->imageResized instanceof \GdImage)) {
             if ($this->debug) {
                 throw new _Exception('saveImage: This is not a resource.');
             } else {
@@ -2828,7 +2828,7 @@ class ImageLib
 
     public function __destruct()
     {
-        if (is_resource($this->imageResized)) {
+        if (is_resource($this->imageResized) && !($this->imageResized instanceof \GdImage)) {
             imagedestroy($this->imageResized);
         }
     }
