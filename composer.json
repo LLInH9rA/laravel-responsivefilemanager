@@ -15,8 +15,8 @@
   },
   "autoload": {
     "psr-4": {
-      "LLInH9rA\\ResponsiveFileManager\\": "src/ResponsiveFileManager/",
-      "LLInH9rA\\FtpClient\\": "src/FtpClient/"
+      "Kwaadpepper\\ResponsiveFileManager\\": "src/ResponsiveFileManager/",
+      "Kwaadpepper\\FtpClient\\": "src/FtpClient/"
     }
   }
 }
