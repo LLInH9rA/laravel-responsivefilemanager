@@ -186,7 +186,8 @@ var encodeURL, show_animation, hide_animation, apply, apply_none, apply_img, app
                         (
                             $trigger.find('.img-precontainer-mini .filetype').hasClass('png') ||
                             $trigger.find('.img-precontainer-mini .filetype').hasClass('jpg') ||
-                            $trigger.find('.img-precontainer-mini .filetype').hasClass('jpeg')
+                            $trigger.find('.img-precontainer-mini .filetype').hasClass('jpeg') ||
+                            $trigger.find('.img-precontainer-mini .filetype').hasClass('webp')
                         ) && image_editor) {
                         options.items.edit_img = {
                             name: jQuery('#lang_edit_image').val(),
